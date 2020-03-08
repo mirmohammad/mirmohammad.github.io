@@ -7,6 +7,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <title>ConvDim | Online convnets size calculator</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Simple tool to calculate the size of inputs and outputs of CNNs">
   <meta name="keywords" content="CNN,Deep Learning,Machine Learning,Online Calculator,Convolution">
   <meta name="author" content="Mirmohammad Saadati">
@@ -135,19 +136,17 @@
   </script>
 </head>
 <body>
-  
   <audio id="goozAudio">
     <source src="gooz.mp3" type="audio/mpeg">
   </audio>
-  
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-xl-8">
           <h1 class="display-4">ConvDim</h1>
           <p class="lead">Simple tool to calculate the size of inputs and outputs of CNNs!</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-xl-4">
           <img src="ets.png" class="img-thumbnail float-left" width="183">
           <img src="livia.png" class="img-thumbnail float-right" width="160">
         </div>
@@ -155,51 +154,49 @@
     </div>
   </div>
   <div class="container">
-      
-        <table id="convt" class="table table-responsive-md">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Layer</th>
-              <th scope="col">In CHs</th>
-              <th scope="col">Out CHs</th>
-              <th scope="col">Kernel</th>
-              <th scope="col">Stride</th>
-              <th scope="col">Pad</th>
-              <th scope="col">Dilate</th>
-              <th scope="col">Actions</th>
-              <th scope="col">In Dims</th>
-              <th scope="col">Out Dims</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><kbd>0</kbd></th>
-              <td><code>Input Image</code></td>
-              <td><code>N/A</code></td>
-              <td><code>rgb?3:1</code></td>
-              <td><code>N/A</code></td>
-              <td><code>N/A</code></td>
-              <td><code>N/A</code></td>
-              <td><code>N/A</code></td>
-              <td><button id="gooz" class="btn btn-sm btn-outline-warning">GOOZ</button></td>
-              <td><code>N/A</code></td>
-              <td>
-                <div class="input-group input-group-sm">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">W</span>
-                  </div>
-                  <input id="imgw" type="text" class="form-control" size="1" maxlength="4" value="224">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">H</span>
-                  </div>
-                  <input id="imgh" type="text" class="form-control" size="1" maxlength="4" value="224">  
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
+    <table id="convt" class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Layer</th>
+          <th scope="col">In CHs</th>
+          <th scope="col">Out CHs</th>
+          <th scope="col">Kernel</th>
+          <th scope="col">Stride</th>
+          <th scope="col">Pad</th>
+          <th scope="col">Dilate</th>
+          <th scope="col">Actions</th>
+          <th scope="col">In Dims</th>
+          <th scope="col">Out Dims</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><kbd>0</kbd></th>
+          <td><code>Input Image</code></td>
+          <td><code>N/A</code></td>
+          <td><code>rgb?3:1</code></td>
+          <td><code>N/A</code></td>
+          <td><code>N/A</code></td>
+          <td><code>N/A</code></td>
+          <td><code>N/A</code></td>
+          <td><button id="gooz" class="btn btn-sm btn-outline-warning">GOOZ</button></td>
+          <td><code>N/A</code></td>
+          <td>
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text">W</span>
+              </div>
+              <input id="imgw" type="text" class="form-control" size="1" maxlength="4" value="224">
+              <div class="input-group-prepend">
+                <span class="input-group-text">H</span>
+              </div>
+              <input id="imgh" type="text" class="form-control" size="1" maxlength="4" value="224">  
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
